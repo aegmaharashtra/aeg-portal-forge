@@ -4,10 +4,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { useToast } from '@/hooks/use-toast';
 import { motion } from 'framer-motion';
 import { LogOut, User, FileText } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export const Dashboard = () => {
   const { user, signOut } = useAuth();
   const { toast } = useToast();
+  const navigate = useNavigate();
 
   const handleSignOut = async () => {
     const { error } = await signOut();
@@ -90,6 +92,7 @@ export const Dashboard = () => {
         >
           <Button 
             size="lg"
+            onClick={() => navigate('/register')}
             className="bg-gradient-primary hover:opacity-90 transition-opacity px-12 py-6 text-lg"
           >
             <FileText className="w-6 h-6 mr-3" />
