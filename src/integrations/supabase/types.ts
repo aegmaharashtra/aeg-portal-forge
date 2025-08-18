@@ -14,7 +14,69 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      profiles: {
+        Row: {
+          age: number | null
+          category: string | null
+          contact: string | null
+          created_at: string
+          district: string | null
+          dob: string | null
+          email: string | null
+          form_step: number | null
+          gender: string | null
+          highest_qualification: string | null
+          id: string
+          is_form_submitted: boolean | null
+          name: string | null
+          passport_photo_url: string | null
+          role: string | null
+          updated_at: string
+          user_id: string
+          user_pass_id: string | null
+        }
+        Insert: {
+          age?: number | null
+          category?: string | null
+          contact?: string | null
+          created_at?: string
+          district?: string | null
+          dob?: string | null
+          email?: string | null
+          form_step?: number | null
+          gender?: string | null
+          highest_qualification?: string | null
+          id?: string
+          is_form_submitted?: boolean | null
+          name?: string | null
+          passport_photo_url?: string | null
+          role?: string | null
+          updated_at?: string
+          user_id: string
+          user_pass_id?: string | null
+        }
+        Update: {
+          age?: number | null
+          category?: string | null
+          contact?: string | null
+          created_at?: string
+          district?: string | null
+          dob?: string | null
+          email?: string | null
+          form_step?: number | null
+          gender?: string | null
+          highest_qualification?: string | null
+          id?: string
+          is_form_submitted?: boolean | null
+          name?: string | null
+          passport_photo_url?: string | null
+          role?: string | null
+          updated_at?: string
+          user_id?: string
+          user_pass_id?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

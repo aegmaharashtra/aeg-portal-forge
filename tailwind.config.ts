@@ -61,7 +61,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// AEG Custom Colors
+				'aeg-green': 'hsl(var(--aeg-green))',
+				'aeg-green-light': 'hsl(var(--aeg-green-light))',
+				'aeg-blue': 'hsl(var(--aeg-blue))',
+				'aeg-purple': 'hsl(var(--aeg-purple))',
+				'glass': 'hsl(var(--glass))',
+				'glass-border': 'hsl(var(--glass-border))'
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-secondary': 'var(--gradient-secondary)',
+				'gradient-glass': 'var(--gradient-glass)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
