@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { AuthPage } from "@/components/auth/AuthPage";
 import { Dashboard } from "@/components/Dashboard";
+import { RegistrationForm } from "@/components/registration/RegistrationForm";
+import { ReviewPage } from "@/components/registration/ReviewPage";
+import { AdminPanel } from "@/components/admin/AdminPanel";
 import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import NotFound from "./pages/NotFound";
 
@@ -30,6 +33,9 @@ const AuthenticatedApp = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/register" element={<RegistrationForm />} />
+        <Route path="/review" element={<ReviewPage />} />
+        <Route path="/admin" element={<AdminPanel />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
